@@ -46,23 +46,24 @@
 
 ## :dart: About ##
 
-Describe your project
+This project has a front end and a back end (fulls tack) that performs book registration through a Rest API in a MongoDB database.
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Backend;\
+:heavy_check_mark: Frontend;\
+:heavy_check_mark: API REST Full;
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
+- [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_colombia_search_core_brand_atlas_desktop&utm_term=mongo%20db&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624317&gclid=Cj0KCQjwu7OIBhCsARIsALxCUaN-GMTqg5yT9OB7-RBvX9V9GWI50g7g5ORYjfTE1F6b23bYZ_KaPO8aAmjJEALw_wcB)
 - [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [Html](https://es.wikipedia.org/wiki/HTML5)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [WebPack](https://webpack.js.org/)
 
 ## :white_check_mark: Requirements ##
 
