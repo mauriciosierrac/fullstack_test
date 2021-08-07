@@ -1,5 +1,6 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Fullstack_test" />
+  
+  ![Web Pack](https://github.com/mauriciosierrac/fullstack_test/blob/master/webpack.png)
 
   &#xa0;
 
