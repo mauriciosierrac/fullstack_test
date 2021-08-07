@@ -7,7 +7,7 @@
   <!-- <a href="https://fullstack_test.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Fullstack_test</h1>
+<h1 align="center">Fullstack Register Books</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/mauriciosierrac/fullstack_test?color=56BEB8">
