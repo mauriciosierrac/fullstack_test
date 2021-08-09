@@ -1,3 +1,4 @@
+import BookService from './services/BookService'
 import './styles/app.css'
 import UI from './UI'
 
@@ -19,8 +20,14 @@ document.getElementById('book-form').addEventListener('submit', e => {
     formData.append('isbn', isbn)
 
     const ui = new UI()
-    ui.addANewBook(formData)
-    ui.renderMessage('New Book Added', 'success', 3000)
+
+    const book = new Book(title, author, isbn)
+    if (title === '' || author === '' || isbn === '') {
+        ui.renderMessage('Please fill all the fields', 'error', 3000)
+    } else {
+        ui.addANewBook(formData)
+        ui.renderMessage('New Book Added', 'success', 3000)
+    }
 
 
     e.preventDefault();
