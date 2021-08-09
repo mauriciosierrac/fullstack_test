@@ -9,9 +9,9 @@ class UI {
         const books = await bookService.getBooks()
         const booksCardContainer = document.getElementById('books-cards')
         booksCardContainer.innerHTML = ''
-        books.forEach(book => {
+        books.forEach((book) => {
             const div = document.createElement('div')
-            div.className = ``
+            div.className = `animated fadeInRight`
             div.innerHTML = `
                 <div class="card m-2">
                     <div class="row">
@@ -36,13 +36,14 @@ class UI {
     }
 
     async addANewBook(book) {
-        await bookService.postBooks(book)
-        this.clearBookForm()
+        await bookService.postBook(book)
         this.renderBooks()
+        this.clearBookForm()
     }
 
     clearBookForm() {
         document.getElementById('book-form').reset()
+        document.getElementById('title').focus()
     }
 
 

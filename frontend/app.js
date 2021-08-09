@@ -1,5 +1,7 @@
-import BookService from './services/BookService'
+
 import './styles/app.css'
+
+import Book from './models/Book.js'
 import UI from './UI'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,38 +9,39 @@ document.addEventListener('DOMContentLoaded', () => {
     ui.renderBooks()
 })
 
-document.getElementById('book-form').addEventListener('submit', e => {
-    const title = document.getElementById('title').value;
-    const author = document.getElementById('author').value;
-    const isbn = document.getElementById('isbn').value;
-    const image = document.getElementById('image').files;
+document.getElementById('book-form')
+    .addEventListener('submit', e => {
+        const title = document.getElementById('title').value;
+        const author = document.getElementById('author').value;
+        const isbn = document.getElementById('isbn').value;
+        const image = document.getElementById('image').files;
 
-    const formData = new FormData()
-    formData.append('image', image[0])
-    formData.append('title', title)
-    formData.append('author', author)
-    formData.append('isbn', isbn)
+        const formData = new FormData()
+        formData.append('image', image[0])
+        formData.append('title', title)
+        formData.append('author', author)
+        formData.append('isbn', isbn)
 
-    const ui = new UI()
+        const ui = new UI()
 
-    const book = new Book(title, author, isbn)
-    if (title === '' || author === '' || isbn === '') {
-        ui.renderMessage('Please fill all the fields', 'error', 3000)
-    } else {
-        ui.addANewBook(formData)
-        ui.renderMessage('New Book Added', 'success', 3000)
-    }
+        const book = new Book(title, author, isbn)
+        if (title === '' || author === '' || isbn === '') {
+            ui.renderMessage('Please fill all the fields', 'error', 3000)
+        } else {
+            ui.addANewBook(formData)
+            ui.renderMessage('New Book Added', 'success', 3000)
+        }
 
 
-    e.preventDefault();
-})
+        e.preventDefault();
+    })
 
 document.getElementById('books-cards')
     .addEventListener('click', e => {
         const ui = new UI()
         if (e.target.classList.contains('delete')) {
             ui.deleteBook(e.target.getAttribute('_id'))
-            ui.renderMessage('Book Removed', 'danger', 2000)
+            ui.renderMessage('Book Removed Successfully', 'success', 3000)
         }
         e.preventDefault()
     })

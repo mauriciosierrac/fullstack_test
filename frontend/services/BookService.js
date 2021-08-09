@@ -1,6 +1,6 @@
 class BookService {
     constructor() {
-        this.URI = '/api/books'
+        this.URI = `/api/books`
     }
 
     async getBooks() {
@@ -9,13 +9,12 @@ class BookService {
         return books
     }
 
-    async postBooks(book) {
+    async postBook(book) {
         const res = await fetch(this.URI, {
             method: 'POST',
             body: book
         })
         const data = await res.json()
-        console.log(data)
     }
 
     async deleteBook(bookId) {
