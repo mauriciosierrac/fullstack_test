@@ -14,7 +14,10 @@ class BookService {
             method: 'POST',
             body: book
         })
-        const data = await res.json()
+        await res.json()
+        .catch((err)=>{
+            console.error(err)
+        })
     }
 
     async deleteBook(bookId) {
@@ -23,9 +26,11 @@ class BookService {
                 'Content-Type': 'application/json',
             },
             method: 'Delete'
-        });
-        const data = await res.json();
-        console.log(data);
+        })
+        await res.json()
+        .catch((err) =>{
+            console.error(err)
+        })
     }
 }
 
