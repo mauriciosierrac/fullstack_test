@@ -16,7 +16,7 @@ const app = express()
 require('./database')
 
 //setting
-app.set('port', process.env.PORT || 3000)
+app.set('port', process.env.PORT || 4000)
 
 //middlewares
 app.use(morgan('dev'))
@@ -41,5 +41,5 @@ app.use(express.static(path.join(__dirname, 'public')))
 //start server
 
 app.listen(app.get('port'), () => {
-    console.log('Server on port ', app.get('port'))
+    console.log(`Server on port ${app.get('port')} ` )
 })

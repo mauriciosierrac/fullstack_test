@@ -9,6 +9,4 @@ mongoose.connect(process.env.MONGODB_URI, {
     .then(db => {
         console.log('DB Connect and already to use :) !!!')
     })
-    .catch(err => {
-        console.error(err)
-    })
+    .catch(err => console.error(err));
