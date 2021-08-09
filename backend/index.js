@@ -6,6 +6,7 @@ const express = require('express')
 const morgan = require('morgan')
 const multer = require('multer')
 const path = require('path')
+const cors = require('cors')
 console.log(process.env.NODE_ENV)
 
 
@@ -28,6 +29,7 @@ const storage = multer.diskStorage({
 app.use(multer({ storage }).single('image'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
+app.use(cors())
 
 //routes
 app.use('/api/books' ,require('./routes/books'))

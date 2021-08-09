@@ -1,1 +1,1 @@
-{"version":3,"file":"css/bundle.css","mappings":"AAAA;IACI,uBAAuB;IACvB,YAAY;AAChB,C","sources":["webpack://fullstack_test/./frontend/styles/app.css"],"sourcesContent":["body {\n    background: greenyellow;\n    color: beige;\n}"],"names":[],"sourceRoot":""}
+{"version":3,"file":"css/bundle.css","mappings":"AAAA;IACI,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;AACvB,C","sources":["webpack://fullstack_test/./frontend/styles/app.css"],"sourcesContent":["body {\n    background: #ecf0f1;\n}\n\n.delete {\n    border-radius: 10px;\n}"],"names":[],"sourceRoot":""}
