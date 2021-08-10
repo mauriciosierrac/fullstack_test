@@ -5,7 +5,7 @@ class BookService {
 
     async getBooks() {
         const response = await fetch(this.URI)
-        await response.json()
+        return await response.json()
         .catch((err) => {
             console.error(err)
         })
