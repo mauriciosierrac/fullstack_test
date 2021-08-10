@@ -51,7 +51,7 @@ class UI {
 
         const div = document.createElement('div')
 
-        div.className = `message alert alert-${colorMessage}`
+        div.className = `alert alert-${colorMessage} message`
 
         div.appendChild(document.createTextNode(message))
 
