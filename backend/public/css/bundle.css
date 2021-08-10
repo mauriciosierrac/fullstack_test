@@ -1,5 +1,5 @@
 .success .error {
-    color: white;
+    color: rgb(255, 0, 0);
     padding: 10px;
     margin: 5px 0 15px 0;
 }
@@ -13,9 +13,13 @@
     background: green;
 }
 
-.error {
-    background: red;
+.alert-error {
+    background: rgb(238, 118, 118);
+    color: #ECE9E6;
+    font-size: large;
+    text-align: center;
 }
+
 body {
     background: #ECE9E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
