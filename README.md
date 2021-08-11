@@ -49,7 +49,7 @@
 
 This project has a front end and a back end (fulls tack) that performs book registration through a Rest API in a MongoDB database.
 
-you cant visite this project in https://registerbookappmao.herokuapp.com/
+you can visite this project in https://registerbookappmao.herokuapp.com/
 
 ## :sparkles: Features ##
 
